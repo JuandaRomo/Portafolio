@@ -7,7 +7,9 @@
     
     <!-- Enlace a Google Fonts para Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    
+    <!-- Enlace a Font Awesome para los íconos de las redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -150,6 +152,30 @@
         .section-bg:hover {
             background-color: rgba(0, 0, 0, 0.7); /* Más oscuro al pasar el cursor */
         }
+
+        /* Estilo para los botones de redes sociales */
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #333;
+            border: 2px solid #3498db;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-buttons a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
     </style>
 </head>
 <body>
@@ -202,6 +228,23 @@
             <p><strong>Teléfono:</strong> 301 269 8003</p>
             <p><strong>Email:</strong> juan_romo@americana.edu.co</p>
         </section>
+
+        <!-- Botones de redes sociales -->
+        <div class="social-buttons">
+            <a href="https://github.com/TuUsuario" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/TuUsuario/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/TuUsuario" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/TuUsuario/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
     </div>
 </body>
 </html>
