@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Juan David Romo Chi</title>
+    
+    <!-- Enlace a Google Fonts para Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif; /* Usando la tipografía Montserrat */
+            color: #fff;
+            background-color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Video de fondo */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #f39c12; /* Color dorado para el encabezado */
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ecf0f1;
+        }
+
+        /* Pestañas */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: 1px solid #3498db;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #2980b9;
+        }
+
+        /* Contenido de las pestañas */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Estilos para las secciones */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #f39c12;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin: 5px 0;
+            color: #ecf0f1;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .bar {
+            display: inline-block;
+            height: 10px;
+            background: #3498db; /* Azul para las barras de habilidades */
+            margin-left: 10px;
+            vertical-align: middle;
+            transition: width 0.5s ease;
+        }
+
+        .bar:hover {
+            background: #2ecc71; /* Verde al pasar el cursor */
+        }
+
+        .bar-container {
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="file:///C:/Users/juand/Downloads/7021905_Cyber_Data_3840x2160.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="container">
+        <header>
+            <!-- Logo personalizado -->
+            <img src="file:///C:/Users/juand/Pictures/Screenshots/Captura%20de%20pantalla%202024-11-26%20152415.png" alt="Logo de Juan David Romo Chi" class="logo">
+            <h1>Juan David Romo Chi</h1>
+            <p>Estudiante de Ingeniería de Sistemas | Programador Backend</p>
+        </header>
+
+        <!-- Pestañas -->
+        <div class="tabs">
+            <div class="tab" onclick="showTab('perfil')">Perfil</div>
+            <div class="tab" onclick="showTab('proyectos')">Proyectos</div>
+            <div class="tab" onclick="showTab('habilidades')">Habilidades</div>
+            <div class="tab" onclick="showTab('educacion')">Educación</div>
+            <div class="tab" onclick="showTab('contacto')">Contacto</div>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content" id="perfil">
+            <section>
+                <h2>Perfil Profesional</h2>
+                <p>Soy un estudiante de tercer semestre de Ingeniería de Sistemas, con el objetivo de obtener el título con excelencia. Apasionado por la programación backend, con habilidades destacadas y un alto compromiso en el desarrollo y resolución de problemas técnicos.</p>
+            </section>
+        </div>
+
+        <div class="tab-content" id="proyectos">
+            <section>
+                <h2>Proyecto Destacado</h2>
+                <p><strong>Sistema de Gestión de Reservas:</strong> Desarrollado en Python utilizando el patrón MVC y Tkinter, permite la creación, visualización y administración eficiente de reservas.</p>
+            </section>
+        </div>
+
+        <div class="tab-content" id="habilidades">
+            <section>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li class="skills">Python:
+                        <div class="bar-container">
+                            <span class="bar" style="width: 70%"></span> 70%
+                        </div>
+                    </li>
+                    <li class="skills">HTML:
+                        <div class="bar-container">
+                            <span class="bar" style="width: 60%"></span> 60%
+                        </div>
+                    </li>
+                    <li class="skills">CSS:
+                        <div class="bar-container">
+                            <span class="bar" style="width: 50%"></span> 50%
+                        </div>
+                    </li>
+                    <li class="skills">Photoshop:
+                        <div class="bar-container">
+                            <span class="bar" style="width: 40%"></span> 40%
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="tab-content" id="educacion">
+            <section>
+                <h2>Educación</h2>
+                <ul>
+                    <li><strong>Corporación Universitaria Americana:</strong> 3er semestre de Ingeniería de Sistemas.</li>
+                    <li><strong>Universidad del Norte:</strong> Diplomados en Fundamentos de Programación, Programación Básica, Desarrollo de Software, y Aplicaciones Web.</li>
+                    <li><strong>Universidad del Norte:</strong> Programa en habilidades de programación con énfasis en aplicaciones web.</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="tab-content" id="contacto">
+            <section>
+                <h2>Contacto</h2>
+                <p><strong>Dirección:</strong> Cra. 20 Sur #95-78</p>
+                <p><strong>Teléfono:</strong> 301 269 8003</p>
+                <p><strong>Email:</strong> juan_romo@americana.edu.co</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Script de JavaScript para manejar las pestañas -->
+    <script>
+        // Función para mostrar el contenido de la pestaña seleccionada
+        function showTab(tabId) {
+            // Ocultar todas las pestañas
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Mostrar la pestaña seleccionada
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active');
+        }
+
+        // Mostrar la pestaña de Perfil por defecto al cargar la página
+        window.onload = () => {
+            showTab('perfil');
+        }
+    </script>
+</body>
+</html>
+
+
+

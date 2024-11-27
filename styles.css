@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+header p {
+    margin: 5px 0;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p, li {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.bar {
+    display: inline-block;
+    height: 10px;
+    background: #3498db;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-weight: bold;
+}
