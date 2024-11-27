@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Juan David Romo Chi</title>
+    
+    <!-- Enlace a Google Fonts para Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif; /* Usando la tipografía Montserrat */
+            color: #fff;  /* Texto en blanco */
+            background-color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Video de fondo */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #f39c12; /* Color dorado para el encabezado */
+            margin-bottom: 10px;
+            font-weight: 600; /* Fuente más gruesa */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ecf0f1; /* Gris claro para la descripción */
+        }
+
+        /* Logo */
+        .logo {
+            width: 100px;  /* Ajusta el tamaño del logo según sea necesario */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #f39c12; /* Color dorado para los encabezados */
+            font-size: 1.8rem;
+            border-bottom: 3px solid #3498db; /* Borde azul para los títulos */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            font-weight: 600; /* Fuente más gruesa */
+        }
+
+        h2:hover {
+            color: #3498db; /* Cambio de color al pasar el cursor */
+            cursor: pointer;
+        }
+
+        p, li {
+            margin: 5px 0;
+            color: #ecf0f1; /* Gris claro para los textos */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .bar {
+            display: inline-block;
+            height: 10px;
+            background: #3498db; /* Azul para las barras de habilidades */
+            margin-left: 10px;
+            vertical-align: middle;
+            transition: width 0.5s ease;
+        }
+
+        .bar:hover {
+            background: #2ecc71; /* Verde al pasar el cursor */
+        }
+
+        .contact p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #ecf0f1; /* Gris claro para los textos de contacto */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-bg {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con mayor opacidad */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            color: #fff;
+            background-position: center;
+            background-size: cover;
+            transition: background-color 0.3s ease;
+        }
+
+        .section-bg:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Más oscuro al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="file:///C:/Users/juand/Downloads/7021905_Cyber_Data_3840x2160.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="container">
+        <header>
+            <!-- Logo personalizado -->
+            <img src="file:///C:/Users/juand/Pictures/Screenshots/Captura%20de%20pantalla%202024-11-26%20152415.png" alt="Logo de Juan David Romo Chi" class="logo">
+            <h1>Juan David Romo Chi</h1>
+            <p>Estudiante de Ingeniería de Sistemas | Programador Backend</p>
+        </header>
+        
+        <section class="profile">
+            <h2>Perfil Profesional</h2>
+            <p>Soy un estudiante de tercer semestre de Ingeniería de Sistemas, con el objetivo de obtener el título con excelencia. Apasionado por la programación backend, con habilidades destacadas y un alto compromiso en el desarrollo y resolución de problemas técnicos.</p>
+        </section>
+        
+        <section class="projects section-bg">
+            <h2>Proyecto Destacado</h2>
+            <p><strong>Sistema de Gestión de Reservas:</strong> Desarrollado en Python utilizando el patrón MVC y Tkinter, permite la creación, visualización y administración eficiente de reservas.</p>
+        </section>
+        
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python: <span class="bar" style="width: 70%"></span> 70%</li>
+                <li>HTML: <span class="bar" style="width: 60%"></span> 60%</li>
+                <li>CSS: <span class="bar" style="width: 50%"></span> 50%</li>
+                <li>Photoshop: <span class="bar" style="width: 40%"></span> 40%</li>
+            </ul>
+        </section>
+        
+        <section class="education section-bg">
+            <h2>Educación</h2>
+            <ul>
+                <li><strong>Corporación Universitaria Americana:</strong> 3er semestre de Ingeniería de Sistemas.</li>
+                <li><strong>Universidad del Norte:</strong> Diplomados en Fundamentos de Programación, Programación Básica, Desarrollo de Software, y Aplicaciones Web.</li>
+                <li><strong>Universidad del Norte:</strong> Programa en habilidades de programación con énfasis en aplicaciones web.</li>
+            </ul>
+        </section>
+        
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Cra. 20 Sur #95-78</p>
+            <p><strong>Teléfono:</strong> 301 269 8003</p>
+            <p><strong>Email:</strong> juan_romo@americana.edu.co</p>
+        </section>
+    </div>
+</body>
+</html>
+
+
